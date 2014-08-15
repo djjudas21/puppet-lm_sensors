@@ -1,0 +1,52 @@
+{
+  "name": "jgazeley-lm_sensors",
+  "version": "0.1.0",
+  "author": "jgazeley",
+  "summary": "Puppet module to install and configure lm_sensors",
+  "license": "Apache 2.0",
+  "source": "https://github.com/djjudas21/puppet-lm_sensors",
+  "project_page": "https://github.com/djjudas21/puppet-lm_sensors",
+  "issues_url": "https://github.com/djjudas21/puppet-lm_sensors/issues",
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 3.0.0"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "5.0",
+        "6.0"
+      ]
+    },
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "5.0",
+        "6.0"
+      ]
+    },
+    {
+      "operatingsystem": "Scientific Linux",
+      "operatingsystemrelease": [
+        "5.0",
+        "6.0"
+      ]
+    },
+    {
+      "operatingsystem": "Fedora",
+      "operatingsystemrelease": [
+        "17",
+        "18",
+        "19",
+        "20",
+        "21"
+      ]
+    }
+  ],
+  "dependencies": [
+  
+  ]
+}
