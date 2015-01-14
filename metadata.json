@@ -1,9 +1,9 @@
 {
-  "name": "jgazeley-lm_sensors",
-  "version": "0.1.0",
+  "name": "jgazeley/lm_sensors",
+  "version": "0.1.1",
   "author": "jgazeley",
   "summary": "Install and configure lm_sensors hardware monitoring",
-  "license": "Apache 2.0",
+  "license": "Apache-2.0",
   "source": "https://github.com/djjudas21/puppet-lm_sensors",
   "project_page": "https://github.com/djjudas21/puppet-lm_sensors",
   "issues_url": "https://github.com/djjudas21/puppet-lm_sensors/issues",
