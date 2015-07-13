@@ -4,7 +4,7 @@ class lm_sensors {
     # Path to config file
     $config = $::osfamily ? {
       'RedHat' => '/etc/sysconfig/lm_sensors',
-      'Debian' => '/etc/modprobe.d/lm_sensors.conf',
+      'Debian' => '/etc/modules',
     }
 
     # Name of service/package
