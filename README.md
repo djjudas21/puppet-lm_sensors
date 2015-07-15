@@ -38,4 +38,5 @@ Feel free to fork and send pull requests, or just make feature requests in the
 issue tracker. I can't guarantee having the time to look at anything.
 
 The best way of contributing to this module is to improve support for different
-Linux distros.
+Linux distros. Please let me know in an issue if you have tested successfully
+on a platform that is not listed.
