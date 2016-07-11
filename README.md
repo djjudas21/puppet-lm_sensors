@@ -40,3 +40,9 @@ issue tracker. I can't guarantee having the time to look at anything.
 The best way of contributing to this module is to improve support for different
 Linux distros. Please let me know in an issue if you have tested successfully
 on a platform that is not listed.
+
+## Changelog
+
+### `0.2.2`
+
+Add basic tests and Travis CI config
