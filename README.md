@@ -20,10 +20,12 @@ interrogate it.
 
 ## Usage
 
-To use it, just:
+To use it, just add:
+
     class { '::lm_sensors': }`
 
 To configure a chip:
+
     lm_sensors::chipset { 'mysqlbackup':
       ensure => present
       chipset => 'nct6776-isa-0290',
