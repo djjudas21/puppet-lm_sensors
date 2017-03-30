@@ -26,9 +26,8 @@ To use it, just add:
 
 To configure a chip:
 
-    lm_sensors::chipset { 'mysqlbackup':
+    lm_sensors::chipset { 'nct6776-isa-0290':
       ensure => present
-      chipset => 'nct6776-isa-0290',
       chip_configs => ['ignore in1', 'label temp3 "SYS Temp"', 'compute temp3 @-20,@-20']
     }
 
@@ -36,8 +35,7 @@ To configure a chip:
 
 ## Limitations
 
-This module has no external dependencies on other modules. The code is simple and
-should run on any Puppet since 0.2.x.
+This depends on Puppetlas Stdlib. The code runs on any Puppet since 4.0.x.
 
 Since lm_sensors requires hardware sensors, this module will have no effect when
 run on a virtual machine (although it is safe).
