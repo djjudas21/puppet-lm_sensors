@@ -27,8 +27,8 @@ To use it, just add:
 To configure a chip:
 
     lm_sensors::chipset { 'nct6776-isa-0290':
-      ensure => present
-      chip_configs => ['ignore in1', 'label temp3 "SYS Temp"', 'compute temp3 @-20,@-20']
+      ensure => present,
+      chip_configs => ['ignore in1', 'label temp3 "SYS Temp"', 'compute temp3 @-20,@-20'],
     }
 
 ## Reference
