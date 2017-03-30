@@ -1,10 +1,10 @@
 class lm_sensors::chipset (
-  String $title,
   Array $chip_configs,
   Enum['file', 'absent'] $ensure,
+  String $title,
 ) {
 
-  # create sensors.d dir
+    # create sensors.d dir & chipset file
   file {
     $::lm_sensors::sensorsd_dir:
       ensure  => directory,
