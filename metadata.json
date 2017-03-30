@@ -11,10 +11,6 @@
     {
       "name": "puppet",
       "version_requirement": ">= 4.0.0"
-    },
-    {
-      "name": "puppetlabs/stdlib",
-      "version_requirement": ">= 4.15.0"
     }
   ],
   "operatingsystem_support": [
@@ -66,6 +62,9 @@
     }
   ],
   "dependencies": [
-
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">= 4.15.0"
+    }
   ]
 }
