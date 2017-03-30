@@ -21,14 +21,14 @@ interrogate it.
 ## Usage
 
 To use it, just:
-`class { '::lm_sensors': }`
+    class { '::lm_sensors': }`
 
 To configure a chip:
-`lm_sensors::chipset { 'mysqlbackup':
-  ensure => present
-  chipset => 'nct6776-isa-0290',
-  chip_configs => ['ignore in1', 'label temp3 "SYS Temp"', 'compute temp3 @-20,@-20']
-}`
+    lm_sensors::chipset { 'mysqlbackup':
+      ensure => present
+      chipset => 'nct6776-isa-0290',
+      chip_configs => ['ignore in1', 'label temp3 "SYS Temp"', 'compute temp3 @-20,@-20']
+    }
 
 ## Reference
 
