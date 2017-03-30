@@ -1,4 +1,3 @@
-# Module only for physical machines that sets up lm_sensors
 class lm_sensors::service {
   # Start lm_sensors service
   service { 'lm_sensors':

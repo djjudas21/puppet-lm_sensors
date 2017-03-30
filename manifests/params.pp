@@ -1,4 +1,3 @@
-# Module only for physical machines that sets up lm_sensors
 class lm_sensors::params {
   $package_ensure = 'present'
   $service_ensure = 'running'

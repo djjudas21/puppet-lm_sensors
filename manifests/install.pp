@@ -1,4 +1,3 @@
-# Module only for physical machines that sets up lm_sensors
 class lm_sensors::install {
   # Install lm_sensors
   package { 'lm_sensors':
