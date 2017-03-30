@@ -7,9 +7,6 @@ class lm_sensors::chipset (
   if $ensure == 'present' {
     $real_ensure = 'file'
   }
-  else {
-    $real_ensure = 'absent'
-  }
 
   # create sensors.d dir & chipset file
   file {
