@@ -16,7 +16,7 @@ class lm_sensors::chipset (
       group   => 'root',
       mode    => '0755',
       require => Package['lm_sensors'];
-    "chipset_${title}":
+    "${::lm_sensors::sensorsd_dir}/chipset_${title}.conf":
       ensure  => $real_ensure,
       owner   => 'root',
       group   => 'root',
