@@ -3,7 +3,6 @@ class lm_sensors::params {
   $package_ensure = 'present'
   $service_ensure = 'running'
   $service_enable = true
-  $remove_volts   = false
   $sensorsd_dir   = '/etc/sensors.d'
 
   case $::osfamily {
