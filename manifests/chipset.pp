@@ -20,7 +20,7 @@ class lm_sensors::chipset (
       mode    => '0644',
       require => File[$::lm_sensors::sensorsd_dir],
       notify  => Service['lm_sensors'],
-      content => template(lm_sensors/chipset.conf);
+      content => template('lm_sensors/chipset.conf');
     }
   }
 }
