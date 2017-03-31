@@ -22,7 +22,7 @@ interrogate it.
 
 To use it, just add:
 
-    class { '::lm_sensors': }`
+    class { '::lm_sensors': }
 
 To configure a chip:
 
