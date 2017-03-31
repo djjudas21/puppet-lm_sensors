@@ -20,14 +20,22 @@ interrogate it.
 
 ## Usage
 
-This module takes no configuration options. To use it, just `include ::lm_sensors`
+To use it, just add:
+
+    class { '::lm_sensors': }
+
+To configure a chip:
+
+    lm_sensors::chipset { 'nct6776-isa-0290':
+      ensure => present,
+      chip_configs => ['ignore in1', 'label temp3 "SYS Temp"', 'compute temp3 @-20,@-20'],
+    }
 
 ## Reference
 
 ## Limitations
 
-This module has no external dependencies on other modules. The code is simple and
-should run on any Puppet since 0.2.x.
+This depends on Puppetlabs Stdlib. The code runs on any Puppet since 4.0.x.
 
 Since lm_sensors requires hardware sensors, this module will have no effect when
 run on a virtual machine (although it is safe).
