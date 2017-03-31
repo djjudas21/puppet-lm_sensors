@@ -35,7 +35,7 @@ To configure a chip:
 
 ## Limitations
 
-This depends on Puppetlas Stdlib. The code runs on any Puppet since 4.0.x.
+This depends on Puppetlabs Stdlib. The code runs on any Puppet since 4.0.x.
 
 Since lm_sensors requires hardware sensors, this module will have no effect when
 run on a virtual machine (although it is safe).
