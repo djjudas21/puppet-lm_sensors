@@ -1,6 +1,5 @@
 # Module only for physical machines that sets up lm_sensors
 class lm_sensors (
-  Boolean $remove_volts                     = $::lm_sensors::params::remove_volt,
   Boolean $service_enable                   = $::lm_sensors::params::service_enable,
   Enum['present','absent'] $package_ensure  = $::lm_sensors::params::package_ensure,
   Enum['running','stopped'] $service_ensure = $::lm_sensors::params::service_ensure,
