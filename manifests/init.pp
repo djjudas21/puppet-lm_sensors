@@ -10,7 +10,6 @@ class lm_sensors (
 ) inherits ::lm_sensors::params {
 
   if $::virtual == 'physical' {
-    include ::lm_sensors::chipset
     include ::lm_sensors::install
     include ::lm_sensors::service
   }

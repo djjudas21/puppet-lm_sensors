@@ -1,11 +1,15 @@
-class lm_sensors::chipset (
-  Array $chip_configs,
-  Enum['present', 'absent'] $ensure,
-  String $title,
+# Type: lm_sensors::chipset
+define lm_sensors::chipset (
+  Array $chip_configs = [],
+  Enum['present', 'absent'] $ensure = 'absent',
+  String $chip = $title,
 ) {
 
   if $ensure == 'present' {
     $real_ensure = 'file'
+  }
+  else {
+    $real_ensure = 'absent'
   }
 
   # create sensors.d dir & chipset file
@@ -16,7 +20,7 @@ class lm_sensors::chipset (
       group   => 'root',
       mode    => '0755',
       require => Package['lm_sensors'];
-    "${::lm_sensors::sensorsd_dir}/chipset_${title}.conf":
+    "${::lm_sensors::sensorsd_dir}/chip_${chip}.conf":
       ensure  => $real_ensure,
       owner   => 'root',
       group   => 'root',
@@ -24,6 +28,5 @@ class lm_sensors::chipset (
       require => File[$::lm_sensors::sensorsd_dir],
       notify  => Service['lm_sensors'],
       content => template('lm_sensors/chipset.conf');
-    }
   }
 }
