@@ -1,7 +1,7 @@
 # Type: lm_sensors::chipset
 define lm_sensors::chipset (
-  Array $chip_configs = [],
-  Enum['present', 'absent'] $ensure = 'absent',
+  Array $chip_configs,
+  Enum['present', 'absent'] $ensure,
   String $chip = $title,
 ) {
 
