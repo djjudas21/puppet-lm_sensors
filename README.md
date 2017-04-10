@@ -51,6 +51,10 @@ on a platform that is not listed.
 
 ## Changelog
 
+### `0.3.0`
+
+Refactored the module to accept parameters and modify chip parameters (thanks @monotek)
+
 ### `0.2.2`
 
 Add basic tests and Travis CI config
