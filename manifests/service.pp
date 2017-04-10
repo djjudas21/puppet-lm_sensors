@@ -1,3 +1,4 @@
+# Start the lm_sensors service
 class lm_sensors::service {
   # Start lm_sensors service
   service { 'lm_sensors':

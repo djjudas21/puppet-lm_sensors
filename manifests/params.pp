@@ -1,3 +1,4 @@
+# Sane defaults for lm_sensors
 class lm_sensors::params {
   $package_ensure = 'present'
   $sensorsd_dir   = '/etc/sensors.d'

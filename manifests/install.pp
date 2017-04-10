@@ -1,3 +1,4 @@
+# Install lm_sensors package and scan for sensors
 class lm_sensors::install {
   # Install lm_sensors
   package { 'lm_sensors':
