@@ -1,8 +1,9 @@
 # Module only for physical machines that sets up lm_sensors
 class lm_sensors (
   Boolean $service_enable,
-  Enum['present','absent'] $package_ensure,
+  String $package_ensure,
   Enum['running','stopped'] $service_ensure,
+  String $service_name,
   Stdlib::Absolutepath $config_file,
   Stdlib::Absolutepath $sensorsd_dir,
   String $exec_command,
