@@ -1,5 +1,5 @@
 ---
-lm_sensors::package_ensure: 'present'
+lm_sensors::package_ensure: present
 lm_sensors::sensorsd_dir: '/etc/sensors.d'
 lm_sensors::service_enable: true
 lm_sensors::service_ensure: 'running'

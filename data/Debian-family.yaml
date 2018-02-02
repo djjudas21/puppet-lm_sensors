@@ -2,4 +2,4 @@
 lm_sensors::config_file: '/etc/modules'
 lm_sensors::exec_command: '/usr/bin/yes "yes" | /usr/sbin/sensors-detect > /dev/null'
 lm_sensors::package: 'lm-sensors'
-lm_sensors::service: 'lm-sensors'
+lm_sensors::service_name: 'lm-sensors'
