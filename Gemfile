@@ -23,5 +23,5 @@ group :development do
   gem 'travis-lint'
   gem 'puppet-blacksmith'
   gem 'guard-rake'
-  gem 'listen', '<= 3.0.6'
+  gem 'listen', '<= 3.10.0'
 end
